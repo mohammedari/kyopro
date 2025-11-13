@@ -17,7 +17,7 @@ int main() {
 
     auto sum = std::accumulate(X.begin(), X.end(), 0, [P](int acc, int x) {
       return acc + (x - P) * (x - P);
-    });
+      });
 
     if (sum < min_sum)
       min_sum = sum;

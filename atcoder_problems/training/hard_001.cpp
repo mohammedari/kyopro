@@ -22,7 +22,7 @@ int main() {
   // for each RL pair, find successive R in left and L in right
   std::vector<int> successive_r_in_left(rl_pairs.size());
   std::vector<int> successive_l_in_right(rl_pairs.size());
-  for (int i = 0;  auto pair_left : rl_pairs) {
+  for (int i = 0; auto pair_left : rl_pairs) {
     for (auto l = pair_left - 1; 0 <= l; --l) {
       if (S[l] == 'R')
         ++successive_r_in_left[i];
@@ -79,7 +79,7 @@ int main_tle() {
         output(next_child_count);
 
       break;
-    } 
+    }
 
     previous_child_count = child_count;
     child_count = next_child_count;
