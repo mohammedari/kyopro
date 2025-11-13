@@ -1,3 +1,8 @@
+# ======================================================================
+# Google C++ Style Guide
+# https://google.github.io/styleguide/cppguide.html
+# ======================================================================
+
 root = true
 
 [*]
@@ -6,12 +11,18 @@ end_of_line = crlf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{c,cc,cpp,cxx,h,hh,hpp,hxx,inl,ipp}]
 indent_style = space
 indent_size = 2
 tab_width = 2
-max_line_length = 80
 
+[*.{c,cc,cpp,cxx,h,hh,hpp,hxx,inl,ipp}]
 cpp_new_line_before_open_brace_namespace = same_line
 cpp_new_line_before_open_brace_type = same_line
 cpp_new_line_before_open_brace_function = same_line
+cpp_new_line_before_open_brace_control_block = same_line
+
+cpp_indent_case_contents = true
+cpp_indent_case_labels = true
+
+[*.md]
+trim_trailing_whitespace = false
