@@ -21,7 +21,7 @@ int main() {
 
   std::vector<int64_t> lesser_successive_count_from_right(N);
   lesser_successive_count_from_right[N - 1] = 0;
-  for (auto i = N - 2; 0 <= i; --i) {
+  for (int i = static_cast<int>(N) - 2; 0 <= i; --i) {
     if (S[i] == '>')
       lesser_successive_count_from_right[i] = lesser_successive_count_from_right[i + 1] + 1;
     else
