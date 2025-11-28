@@ -2,7 +2,7 @@
 #include <vector>
 #include <numeric>
 
-int gcd(int a, int b) {
+int Gcd(int a, int b) {
   while (b != 0) {
     int temp = b;
     b = a % b;
@@ -15,7 +15,7 @@ int main() {
   int A, B, C;
   std::cin >> A >> B >> C;
 
-  int g = gcd(A, B);
+  int g = Gcd(A, B);
   if (C % g == 0)
     std::cout << "YES" << std::endl;
   else
